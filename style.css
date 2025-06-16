@@ -1,0 +1,1137 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    box-shadow: 0px 2px 10px 0px #ccc;
+  padding: 15px;
+    justify-content: space-between;
+    position: sticky;
+  top: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.headerleft{
+    width: 48%;
+    margin-left: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.menu ul{
+    display: flex;
+    gap: 30px;
+}
+
+.menu ul li a{
+    color: black;
+    font-size: 14px;
+font-weight: 600;
+
+}
+
+.headerright{
+    width: 45%;
+display: flex;
+align-items: center;
+margin-right: 2%;
+justify-content: space-between;
+}
+
+.headerright form{
+    width: 70%;
+    display: flex;
+ border: 1px solid #ccc;
+ border-radius: 50px;
+}
+
+.headerright form button{
+width: 10%;
+background: transparent;
+border: none;
+}
+
+.headerright form input{
+width: 80%;
+height: 30px;
+border: none;
+}
+
+.profile ul{ 
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.profile ul li{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 12px;
+    gap: 3px;
+}
+
+.banner{
+ width: 100%;
+}
+
+.banner img{
+width: 100%;
+
+} 
+
+.products{
+width: 100%;
+padding: 80px 0;
+}
+
+.products h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+.productrow{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    gap:1%;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.productitems{
+    width: 20%;
+    box-shadow: 0px 0px 7px 1px #ccc;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.productitems:hover{
+    transform: scale(1.1);
+}
+
+.productitems img{
+    width: 100%;
+}
+
+
+.dealrow{
+    width: 100%;
+    display: flex;
+   padding-bottom: 50px;
+
+
+}
+
+.deal1{
+    width: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+.deal1:hover{
+    transform: scale(1.1);
+}
+
+.deal2{
+    width: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+.deal2:hover{
+    transform: scale(1.1);
+}
+
+.longdeal{
+    width: 100%;
+}
+
+.newarrival{
+    width: 100%;
+}
+
+.newarrival h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+.newarrivalrow{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    gap:1%;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+
+.newarrivalitems{
+        width: 20%;
+    }
+    
+.newarrivalitems img{
+        width: 100%;
+        border-radius: 10px;
+    }
+
+.offers{
+    margin-top: 30px;
+    width: 100%;
+}
+.offers img{
+    width: 100%;
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    width: 22%;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    color: #000;
+}
+
+.social-icons a i {
+    width: 30px;
+    color: #000;
+    font-size: 23px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a i:hover{
+    transform: scale(1.1);
+
+}
+.payment-icons{
+    width: 100px;
+    margin-right: 10px;
+}
+
+.payment-icons ul{
+    color: #555;
+    font-size: 14px;
+}
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #e0e0e0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Sticky Floating Button */
+.sticky-bell {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(0, 116, 231);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    animation: wiggle 2s linear infinite;
+    transform-origin: 50% 3em;
+    transition: background 0.3s, transform 0.2s;
+}
+
+@keyframes wiggle {
+    0%,
+    5%{
+        transform: rotateZ(0);
+    }
+    15%{
+        transform: rotateZ(-15deg);
+    }
+    20%{
+        transform: rotateZ(10deg);
+    }
+    25%{
+        transform: rotateZ(-10deg);
+    }
+    30%{
+        transform: rotateZ(6deg);
+    }
+    35%{
+        transform: rotateZ(-4deg);
+    }
+    40%,
+    100%{
+        transform: rotateZ(0);
+    }
+}
+
+.sticky-bell:hover {
+    background-color: #1d85fc;
+    transform: scale(1.1);
+}
+
+
+
+/* Popup Styling */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    width: 80%;
+    max-width: 400px;
+    /* padding: 20px; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    overflow: hidden;
+    display: none;
+    z-index: 1000;
+}
+
+.offer-text{
+    padding: 20px 40px 40px 40px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.offer-text h2{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.offer-text h5{
+    display: inline-block;
+    color: rgb(168, 0, 0);
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+
+.offer-text form{
+    margin-top: 20px;
+    display: flex;
+    background: #efefef;
+    border-radius: 4px;
+}
+
+.offer-text input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    padding: 12px 10px;
+
+}
+
+.offer-text form button{
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background: #ff2b4e;
+    color: #fff;
+    padding: 0px 15px;
+    border-radius: 4px;
+}
+.close-btn {
+    position: absolute;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Dark Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    box-shadow: 0px 2px 10px 0px #ccc;
+    padding: 15px;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.headerleft{
+    width: 48%;
+    margin-left: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu ul{
+    display: flex;
+    gap: 30px;
+}
+
+.menu ul li a{
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.headerright{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
+    justify-content: space-between;
+}
+
+.headerright form{
+    width: 70%;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+}
+
+.headerright form button{
+    width: 10%;
+    background: transparent;
+    border: none;
+}
+
+.headerright form input{
+    width: 80%;
+    height: 30px;
+    border: none;
+}
+
+.profile ul{ 
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile ul li{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 12px;
+    gap: 3px;
+}
+
+.banner{
+    width: 100%;
+}
+
+.banner img{
+    width: 100%;
+} 
+
+.products{
+    width: 100%;
+    padding: 80px 0;
+}
+
+.products h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+.productrow{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    gap: 1%;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.productitems{
+    width: 20%;
+    box-shadow: 0px 0px 7px 1px #ccc;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.productitems:hover{
+    transform: scale(1.1);
+}
+
+.productitems img{
+    width: 100%;
+}
+
+.dealrow{
+    width: 100%;
+    display: flex;
+    padding-bottom: 50px;
+}
+
+.deal1{
+    width: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.deal1:hover{
+    transform: scale(1.1);
+}
+
+.deal2{
+    width: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.deal2:hover{
+    transform: scale(1.1);
+}
+
+.longdeal{
+    width: 100%;
+}
+
+.newarrival{
+    width: 100%;
+}
+
+.newarrival h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+.newarrivalrow{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    gap: 1%;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.newarrivalitems{
+    width: 20%;
+}
+    
+.newarrivalitems img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.offers{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.offers img{
+    width: 100%;
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    width: 22%;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    color: #000;
+}
+
+.social-icons a i {
+    width: 30px;
+    color: #000;
+    font-size: 23px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a i:hover{
+    transform: scale(1.1);
+}
+
+.payment-icons{
+    width: 100px;
+    margin-right: 10px;
+}
+
+.payment-icons ul{
+    color: #555;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #e0e0e0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Sticky Floating Button */
+.sticky-bell {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(0, 116, 231);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    animation: wiggle 2s linear infinite;
+    transform-origin: 50% 3em;
+    transition: background 0.3s, transform 0.2s;
+}
+
+@keyframes wiggle {
+    0%, 5%{
+        transform: rotateZ(0);
+    }
+    15%{
+        transform: rotateZ(-15deg);
+    }
+    20%{
+        transform: rotateZ(10deg);
+    }
+    25%{
+        transform: rotateZ(-10deg);
+    }
+    30%{
+        transform: rotateZ(6deg);
+    }
+    35%{
+        transform: rotateZ(-4deg);
+    }
+    40%, 100%{
+        transform: rotateZ(0);
+    }
+}
+
+.sticky-bell:hover {
+    background-color: #1d85fc;
+    transform: scale(1.1);
+}
+
+/* Popup Styling */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    overflow: hidden;
+    display: none;
+    z-index: 1000;
+}
+
+.offer-text{
+    padding: 20px 40px 40px 40px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.offer-text h2{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.offer-text h5{
+    display: inline-block;
+    color: rgb(168, 0, 0);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.offer-text form{
+    margin-top: 20px;
+    display: flex;
+    background: #efefef;
+    border-radius: 4px;
+}
+
+.offer-text input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    padding: 12px 10px;
+}
+
+.offer-text form button{
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background: #ff2b4e;
+    color: #fff;
+    padding: 0px 15px;
+    border-radius: 4px;
+}
+
+.close-btn {
+    position: absolute;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Dark Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+}
+
+/* ===== RESPONSIVE MEDIA QUERIES ===== */
+
+/* Extra Large Screens */
+@media screen and (max-width: 1200px) {
+    .headerleft {
+        width: 50%;
+    }
+    
+    .headerright {
+        width: 48%;
+    }
+    
+    .menu ul {
+        gap: 20px;
+    }
+    
+    .productrow, .newarrivalrow {
+        padding: 15px;
+    }
+}
+
+/* Large Tablets and Small Laptops */
+@media screen and (max-width: 992px) {
+    .header {
+        padding: 10px;
+    }
+    
+    .headerleft {
+        width: 55%;
+        margin-left: 1%;
+    }
+    
+    .headerright {
+        width: 43%;
+        margin-right: 1%;
+    }
+    
+    .menu ul {
+        gap: 15px;
+    }
+    
+    .menu ul li a {
+        font-size: 13px;
+    }
+    
+    .profile ul {
+        gap: 10px;
+    }
+    
+    .profile ul li {
+        font-size: 11px;
+    }
+    
+    .products h2, .newarrival h2 {
+        font-size: 26px;
+    }
+    
+    .productrow, .newarrivalrow {
+        gap: 1.5%;
+        padding: 15px;
+    }
+    
+    .footer-section {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    .headerleft, .headerright {
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+    }
+    
+    .headerleft {
+        order: 1;
+    }
+    
+    .headerright {
+        order: 2;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .headerright form {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .menu ul {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .profile ul {
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .products {
+        padding: 50px 0;
+    }
+    
+    .products h2, .newarrival h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .productrow, .newarrivalrow {
+        flex-wrap: wrap;
+        gap: 2%;
+        padding: 10px;
+    }
+    
+    .productitems, .newarrivalitems {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+    
+    .dealrow {
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+    
+    .deal1, .deal2 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    
+    .footer-section {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .social-icons {
+        justify-content: center;
+        display: flex;
+        gap: 15px;
+    }
+    
+    .sticky-bell {
+        width: 55px;
+        height: 55px;
+        font-size: 20px;
+        bottom: 30px;
+        right: 15px;
+    }
+    
+    .popup {
+        width: 90%;
+        max-width: 350px;
+    }
+    
+    .offer-text {
+        padding: 15px 25px 25px 25px;
+    }
+    
+    .offer-text h2 {
+        font-size: 28px;
+    }
+}
+
+/* Large Mobile Phones */
+@media screen and (max-width: 576px) {
+    .header {
+        padding: 8px;
+    }
+    
+    .logo img {
+        height: 30px;
+    }
+    
+    .menu ul {
+        gap: 10px;
+        font-size: 12px;
+    }
+    
+    .menu ul li a {
+        font-size: 12px;
+    }
+    
+    .profile ul li {
+        font-size: 10px;
+    }
+    
+    .profile ul li i {
+        font-size: 14px;
+    }
+    
+    .headerright form input {
+        height: 25px;
+        font-size: 12px;
+    }
+    
+    .products, .newarrival {
+        padding: 30px 0;
+    }
+    
+    .products h2, .newarrival h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .productrow, .newarrivalrow {
+        padding: 5px;
+        gap: 3%;
+    }
+    
+    .productitems, .newarrivalitems {
+        width: 48.5%;
+        margin-bottom: 15px;
+    }
+    
+    .productitems:hover, .newarrivalitems:hover,
+    .deal1:hover, .deal2:hover {
+        transform: scale(1.05);
+    }
+    
+    .footer-section h3 {
+        font-size: 14px;
+    }
+    
+    .footer-section ul li a {
+        font-size: 12px;
+    }
+    
+    .social-icons a i {
+        font-size: 20px;
+    }
+    
+    .sticky-bell {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+        bottom: 20px;
+        right: 10px;
+    }
+    
+    .popup {
+        width: 95%;
+        max-width: 300px;
+    }
+    
+    .offer-text {
+        padding: 15px 20px 20px 20px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    .offer-text h2 {
+        font-size: 24px;
+    }
+    
+    .offer-text h5 {
+        font-size: 12px;
+    }
+    
+    .offer-text form button {
+        padding: 0px 10px;
+        font-size: 12px;
+    }
+}
+
+/* Small Mobile Phones */
+@media screen and (max-width: 480px) {
+.hamburger div{
+      width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 6px;
+  margin-left: 200px;
+}
+
+    .menu ul {
+        display: none;
+    }
+    
+    /* .menu ul li a {
+        font-size: 11px;
+    } */
+    
+    .profile ul {
+        gap: 8px;
+    }
+    
+    .profile ul li {
+        font-size: 9px;
+    }
+    
+    .profile ul li b {
+        display: none;
+    }
+    
+    .headerright form {
+        max-width: 250px;
+    }
+    
+    .productrow, .newarrivalrow {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .productitems, .newarrivalitems {
+        width: 80%;
+        max-width: 250px;
+        margin-bottom: 20px;
+    }
+    
+    .offer-text h2 {
+        font-size: 20px;
+    }
+    
+    .close-btn {
+        font-size: 25px;
+        width: 25px;
+        height: 25px;
+    }
+}

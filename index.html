@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png"
+    href="data:image/png;base64,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"
+    sizes="64x64"/>
+    <title>myntra</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    
+    <div class="header">
+        <div class="headerleft">
+<div class="logo">
+    <img src="photos/myntra-logo-freelogovectors.net_.png" alt="myntra-logo" height="40px" >
+
+</div>
+<div class="menu">
+<div class="hamburger">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+    <ul>
+   <li> <a href="#">Men</a></li>
+   <li> <a href="#">Women</a></li>
+   <li> <a href="#">Kids</a></li>
+   <li> <a href="#">Home</a></li>
+   <li> <a href="#">Beauty</a></li>
+   <li> <a href="#">Studio</a></li>
+
+    </ul>
+</div>
+      </div>
+
+      <div class="headerright">
+<form action="#">
+  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+  <input type="text" placeholder="Search for products, brand and more">
+</form>
+<div class="profile">
+    <ul>
+        <li><i class="fa-solid fa-user"></i><b>Profile</b></li>
+        <li><i class="fa-solid fa-heart"></i><b>Whislist</b></li>
+        <li><i class="fa-solid fa-bag-shopping"></i><b>Bag</b> </li>
+    </ul>
+</div>
+      </div>
+    </div>
+
+    <div class="banner">
+        <img src="photos/5092428.jpg" alt="">
+    </div>
+
+    <div class="products">
+        <h2>SHOP BY CATEGORY</h2>
+        <div class="productrow">
+            <div class="productitems">
+                <img src="photos/MMvGmLwM_4b0f767e353340029ceb1c8fb200da58.webp" alt="">
+            </div>
+
+            <div class="productitems">
+                <img src="photos/84GFA7qz_f88f94635156436b8b6ee3f3b78aaa70.webp" alt="">
+            </div>
+
+
+            <div class="productitems">
+                <img src="photos/NFPu2elL_415a5041bc1745fcab33b120c33f90c1.webp" alt="">
+            </div>
+
+            <div class="productitems">
+                <img src="photos/vxi6pLO1_5384e43d2038440ba98a738ce963a36d.webp" alt="">
+            </div>
+
+            <div class="productitems">
+                <img src="photos/Y3efHWmC_f6faf5e0dda84af4a437e64fb504c2d1.webp" alt="">
+            </div>
+        </div>
+    </div>
+
+
+        <div class="dealrow">
+            <div class="deal1">
+                <img src="photos/17800f8a-d24f-49e8-9d80-2a22065d2a111742464840000-Flat-100-Off.webp" alt="">
+            </div>
+
+            <div class="deal2">
+                <img src="photos/22c8b3ae-b14c-4b8d-913b-dc632978cd941742464839978-Flat-200-Off.webp" alt="">
+            </div>
+        </div>
+
+
+<div class="newarrival">
+    <h2>NEW ARRIVALS</h2>
+    <div class="newarrivalrow">
+
+   <div class="newarrivalitems">
+    <img src="photos/069fb2d2-997e-4e4c-914e-f7b75851186d1709215216782SPORTSUNMenPrintedPoloCollarPocketsT-shirt1.webp" alt="">
+   </div>
+
+   <div class="newarrivalitems">
+    <img src="photos/4fb89088-ff28-45ae-90d8-bd45c678db901703703944222BAESDNavyBlueWhiteFloralPrintGeorgetteMaxiDress1.webp" alt="">
+   </div>
+
+   <div class="newarrivalitems">
+    <img src="photos/270c8104-60cf-449c-9702-ea9ef5c91d3a1719985459047-Arrow-Sport-Men-Tshirts-8851719985458591-1.webp" alt="">
+   </div>
+
+   <div class="newarrivalitems">
+    <img src="photos/871f4abf-5727-4840-9438-93b1998642af1700816923071SlyckBlackFloralPrintPuffSleeveCropTop1.webp" alt="">
+   </div>
+
+   <div class="newarrivalitems">
+    <img src="photos/4fb89088-ff28-45ae-90d8-bd45c678db901703703944222BAESDNavyBlueWhiteFloralPrintGeorgetteMaxiDress1.webp" alt="">
+   </div>
+    </div>
+</div>
+
+<div class="offers">
+    <img src="photos/a4720a50-1594-4b1f-aff8-10bffa17214b1743070164003-App-Install-Banner.webp" alt="">
+</div>
+
+
+<!-- FOOTER SECTION -->
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Customer Policies</h3>
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">T&C</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h3>100% Secure Payment</h3>
+            <div class="payment-icons">
+<ul>
+    <li>Visa</li>
+    <li>Mastercard</li>
+    <li>PayPal</li>
+    <li>Cash On Delivery</li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>© 2025 www.myntra.com. All rights reserved.</p>
+    </div>
+
+      <!-- Sticky Bell Button -->
+      <button class="sticky-bell" id="bellButton">
+        <i class="fa-solid fa-bell"></i>
+    </button>
+
+    <!-- Popup Notification -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close-btn" id="closePopup">&times;</span>
+            <!-- <h3>Notifications</h3>
+            <p>You have new alerts!</p> -->
+
+            <img src="photos/happy-beautiful-couple-posing-with-shopping-bags-violet.jpg" alt="" width="100%">
+           <div class="offer-text">
+            <h2>GET 15% OFF</h2>
+            <h5>On Your First Purchase</h5>
+            <p>Myntra is the ultimate destination for fashion and lifestyle, being host to a wide array of merchandise including clothing, footwear, accessories, jewellery, personal care products and more.</p>
+            <form action="#">
+
+                <input type="email" name="" id="" placeholder="Enter Your Email">
+                <button type="submit">SUBMIT</button>
+            </form>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+    const bellButton = document.getElementById("bellButton");
+    const popup = document.getElementById("popup");
+    const closePopup = document.getElementById("closePopup");
+
+    // Show popup when button is clicked
+    bellButton.addEventListener("click", function() {
+        popup.style.display = "block";
+    });
+
+    // Close popup when close button is clicked
+    closePopup.addEventListener("click", function() {
+        popup.style.display = "none";
+    });
+
+    // Close popup when clicking outside it
+    window.addEventListener("click", function(event) {
+        if (event.target === popup) {
+            popup.style.display = "none";
+        }
+    });
+});
+
+
+function startWiggle() {
+    let bellButton = document.getElementById("bell-btn");
+    setInterval(() => {
+        bellButton.classList.add("wiggle");
+        setTimeout(() => {
+            bellButton.classList.remove("wiggle");
+        }, 1000); // Stop wiggle after 1 second
+    }, 5000); // Repeat every 5 seconds
+}
+
+startWiggle();
+
+</script>
+</html>
